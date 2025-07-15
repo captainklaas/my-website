@@ -6,7 +6,7 @@
   <title>Captain Klaas</title>
   <style>
     body \{
-      margin: 0;\
+      margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
       background-color: #222;
       color: #fff;
@@ -55,6 +55,39 @@
       <a href="mailto:info@captainklaas.com?subject=Charter Inquiry&body=I’m interested in hearing more...">Contact</a>
     </nav>
   </header>
+
+<style>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+</style>
+
   <div class="content">
     <h2>Welcome to Captain Klaas's Site</h2>
     <p>This is a simple example mimicking the style. You can replace this with your own content.</p>
