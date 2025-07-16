@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Expert boat handling and instruction services by Captain Klaas. Professional marine training and safety instruction for confident navigation." />
+  <meta name="description" content="About Captain Klaas - Learn more about our expert boat handling and marine instruction services" />
   <meta name="keywords" content="boat handling, marine instruction, captain training, boat safety, navigation training, boat delivery" />
-  <title>Captain Klaas - Expert Boat Handling & Marine Instruction</title>
+  <title>About - Captain Klaas</title>
   <style>
     body {
       margin: 0;
@@ -51,6 +51,17 @@
       display: block;
       margin-bottom: 1rem;
     }
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
     footer {
       background-color: #444;
       text-align: center;
@@ -77,18 +88,31 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="mailto:info@captainklaas.com?subject=Charter Inquiry&body=I’m interested in hearing more...">Contact</a>
+      <a href="mailto:info@captainklaas.com?subject=Charter Inquiry&body=I'm interested in hearing more...">Contact</a>
     </nav>
   </header>
 
   <main class="content">
-    <img src="images/GT50.jpg" alt="white motoryacht with fly-bridge">
-    <h1>GAIN CONFIDENCE and STAY SAFE</h1>
+    <h1>About Captain Klaas</h1>
     <section>
-      <h2>Expert Boat Handling and Instruction</h2>
-      <p>Welcome to Captain Klaas Marine Services and Training where our mission is to teach you the skills to confidently operate your boat with superior judgement. </p>
+      <h2>Experience & Expertise</h2>
+      <p>Captain Klaas is a USCG Merchant Mariner qualified to serve as Master on sailboats and motor vessels up to 100 GT in inland and near coastal (up to 200 NM) waters. 
+        He is also certified by the Texas Parks and Wildlife Division to teach their Boater Education Course.</p>
+      <p>His most recent experience has been in the Gulf, but he has also sailed extensively around the Netherlands, Germany, Denmark, Norway, Scotland, Italy, Croatia, and Australia.</p>
+      <p>Some of the boats he has operated are: Beneteau Gran Turismo 50 Sportfly, Chris Craft Roamer 40, Lemsteraak, Elan 31, Dehler 28, Stingray 220, Hobie 16</p>
     </section>
   </main>
+
+  <div class="image-gallery">
+    <img src="images/GT50.jpg" alt="Gran Turismo">
+    <img src="images/roamer.jpg" alt="Chris Craft Roamer">
+    <img src="images/lemsteraak.jpg" alt="Lemsteraak">
+    <img src="images/vb124.jpg" alt="De Eenhoorn">
+    <img src="images/elan_31.jpg" alt="Elan 31">
+    <img src="Images/dehler28.jpg" alt="Dehler 28">
+    <img src="images/stingray.jpg" alt="Stingray 220LX">
+    <img src="images/hobie16.jpg" alt="Hobie 16">
+  </div>  
 
   <script type="application/ld+json">
     {
