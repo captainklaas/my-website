@@ -7,47 +7,69 @@
   <meta name="keywords" content="boat handling, marine instruction, captain training, boat safety, navigation training, boat delivery" />
   <title>Captain Klaas - Expert Boat Handling & Marine Instruction</title>
   <style>
-    body \{
+    body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
       background-color: #222;
       color: #fff;
-    \}
-    header \{
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
       background-color: #444;
-      padding: 20px;
-      text-align: center;
-    \}
-    header h1 \{
+    }
+    header h1 {
       margin: 0;
       font-size: 2.5em;
-
-    \}
-    nav \{
+      border: 2px solid black;
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      gap: 2rem;
       margin-top: 10px;
-    \}
-    nav a \{
+    }
+    nav a {
       color: #fff;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
-    \}
-    nav a:hover \{
+    }
+    nav a:hover {
       text-decoration: underline;
-    \}
-    .content \{
+    }
+    .content {
       padding: 20px;
       max-width: 900px;
       margin: auto;
-    \}
-    footer \{
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    footer {
       background-color: #444;
       text-align: center;
       padding: 15px;
       margin-top: 40px;
-    \}
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Captain Klaas</h1>
@@ -59,50 +81,15 @@
     </nav>
   </header>
 
-<style>
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  padding: 1rem 2rem;
-}
-
-h1 {
-  border: 2px solid black; /* Creates the black box border */
-  padding: 10px; /* Adds some space between the text and the border */
-}
-
-nav {
-  display: flex;
-  gap: 2rem;
-}
-
-nav a { 
-  text-decoration: none;
-  color: #333;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  nav {
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-}
-</style>
-
   <main class="content">
+    <img src="images/GT50.jpg" alt="white motoryacht with fly-bridge">
     <h1>GAIN CONFIDENCE and STAY SAFE</h1>
     <section>
       <h2>Expert Boat Handling and Instruction</h2>
       <p>Welcome to Captain Klaas Marine Training</p>
     </section>
   </main>
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -112,9 +99,11 @@ nav a {
       "priceRange": "$$",
       "service": "Boat handling instruction"
     }
-    </script>
+  </script>
+
   <footer>
     <p>&copy; 2025 Captain Klaas. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
