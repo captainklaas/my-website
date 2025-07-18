@@ -63,21 +63,85 @@
         object-fit: cover;
     }
 
-  .maintenance-banner {
-      background-color: #ff9800;
-      color: black;
-      text-align: center;
-      padding: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 2px solid #f57c00;
-  }
+    .maintenance-banner {
+        background-color: #ff9800;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 2px solid #f57c00;
+    }
 
-  .maintenance-banner p {
-      margin: 0;
+    .maintenance-banner p {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .faq-section {
+      font-family: system-ui;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-section details {
+      margin-bottom: 1rem;
+    }
+
+    .faq-section summary {
+      cursor: pointer;
       font-weight: bold;
-  }
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      position: relative;
+      list-style: none;
+    }
+
+    .faq-section summary::after {
+      content: '+';
+      position: absolute;
+      right: 1rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-section details[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-content {
+      padding: 1rem;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .faq-content a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .faq-content a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-section a {
+        color: #ffd700; /* gold */
+    }
+
+    .faq-section a:visited {
+        color: #ffa500; /* orange */
+    }
+
+    .faq-section a:hover {
+        color: #ffffff; /* white */
+        text-decoration: underline;
+    }
 
     footer {
       background-color: #444;
@@ -112,15 +176,36 @@
 
   <main class="content">
     <h1>FAQ</h1>
-    <section>
+    <section class="faq-section">
       <h2>Rules and Regulations</h2>
-      <p>Rules for recreational boaters in Texas state waters</p>
-      <a href="https://tpwd.texas.gov/education/boater-education/watersafetyact" target="_blank" rel="noopener noreferrer">Water Safety Act</a>
-      <p>What is a recreational vessel?</p>
-      <a href="https://www.ecfr.gov/current/title-20/chapter-VI/subchapter-A/part-701/subject-group-ECFRd5967565cd2bcf0/section-701.501" target="_blank" rel="noopener noreferrer">Title 20 Chapter VI Subchapter A Part 701</a>
-      <p>What is a T boat?</p>
-      <a href="https://www.ecfr.gov/current/title-46/chapter-I/subchapter-T" target="_blank" rel="noopener noreferrer">Title 46 Chapter I Subchapter T</a>
-    </section>
+      
+      <details>
+        <summary>Rules for recreational boaters in Texas state waters</summary>
+        <div class="faq-content">
+          <a href="https://tpwd.texas.gov/education/boater-education/watersafetyact" target="_blank" rel="noopener noreferrer">
+            Learn more about the Water Safety Act
+          </a>
+        </div>
+      </details>
+    
+      <details>
+        <summary>What is a recreational vessel?</summary>
+        <div class="faq-content">
+          <a href="https://www.ecfr.gov/current/title-20/chapter-VI/subchapter-A/part-701/subject-group-ECFRd5967565cd2bcf0/section-701.501" target="_blank" rel="noopener noreferrer">
+            View recreational vessel definitions in Title 20 Chapter VI
+          </a>
+        </div>
+      </details>
+    
+      <details>
+        <summary>What is a T boat?</summary>
+        <div class="faq-content">
+          <a href="https://www.ecfr.gov/current/title-46/chapter-I/subchapter-T" target="_blank" rel="noopener noreferrer">
+            Learn about T boats in Title 46 Chapter I
+          </a>
+        </div>
+      </details>
+    </section>    
   </main>
 
   <div class="image-gallery">
