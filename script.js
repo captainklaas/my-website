@@ -1,3 +1,5 @@
+import { API_KEY } from './config.js';
+
 class ClaudeChat {
     constructor() {
         this.apiKey = "sk-ant-api03-" + API_KEY;
@@ -6,6 +8,7 @@ class ClaudeChat {
         this.chatMessages = document.getElementById('chatMessages');
         
         this.initializeEventListeners();
+        this.loadInitialMessages();
     }
 
     initializeEventListeners() {
@@ -13,6 +16,14 @@ class ClaudeChat {
         this.messageInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.sendMessage();
         });
+    }
+
+    loadInitialMessages() {
+        // Welcome and example conversation
+        this.addMessage("👋 Welcome! I can help you find information from federal regulations (eCFR).", 'assistant');
+        this.addMessage("What is the cfr that deals with mandatory drug tests for operators of uninspected passenger vessels?", 'user');
+        this.addMessage("21 CFR 101.9(d)", 'assistant');
+        this.addMessage("Ask me your regulatory question to get started! 🔍", 'assistant');
     }
 
     async sendMessage() {
