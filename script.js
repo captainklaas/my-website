@@ -1,6 +1,6 @@
 class ClaudeChat {
     constructor() {
-        this.apiKey = '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';
+        this.apiKey = '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';
         this.messageInput = document.getElementById('messageInput');
         this.sendButton = document.getElementById('sendButton');
         this.chatMessages = document.getElementById('chatMessages');
