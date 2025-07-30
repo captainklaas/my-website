@@ -1,10 +1,8 @@
+import { API_KEY } from './config.js';
+
 class ClaudeChat {
     constructor() {
-        this.str1 = 'sk';
-        this.str2 = 'ant';
-        this.str3 = 'api03';
-        this.str4 = 'oQkYXNDIq2O3MAGkE70N-NW5wzN0d_uM_6OB_-L4BaPoavO0IUhx0IWZRqPm-QErkzKcB8Q5htmytBIfHF-H-w-89F2tAAA';
-        this.apiKey = this.str1 + '-' + this.str2 + '-' + this.str3 + '-' + this.str4;
+        this.apiKey = "sk-ant-api03-" + API_KEY;
         this.messageInput = document.getElementById('messageInput');
         this.sendButton = document.getElementById('sendButton');
         this.chatMessages = document.getElementById('chatMessages');
