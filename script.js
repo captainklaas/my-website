@@ -1,5 +1,3 @@
-import { API_KEY } from './config.js';
-
 class ClaudeChat {
     constructor() {
         this.apiKey = "sk-ant-api03-" + API_KEY;
