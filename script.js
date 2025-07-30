@@ -22,7 +22,7 @@ class ClaudeChat {
         // Welcome and example conversation
         this.addMessage("👋 Welcome! I can help you find information from federal regulations (eCFR).", 'assistant');
         this.addMessage("What is the cfr that deals with mandatory drug tests for operators of uninspected passenger vessels?", 'user');
-        this.addMessage("21 CFR 101.9(d)", 'assistant');
+        this.addMessage("46 CFR 16.201", 'assistant');
         this.addMessage("Ask me your regulatory question to get started! 🔍", 'assistant');
     }
 
